@@ -1,0 +1,20 @@
+https://www.w3resource.com/mysql/mysql-partition.php
+https://www.red-gate.com/simple-talk/sql/oracle/introduction-to-table-partitioning/
+
+https://www.rathishkumar.in/2016/09/mysql-partitioning-example.html
+https://dev.mysql.com/doc/refman/8.0/en/partitioning-info.html
+
+example
+https://stackoverflow.com/questions/1579930/what-is-mysql-partitioning
+
+CREATE TABLE employees (
+    id INT NOT NULL,
+    name VARCHAR(30),
+    hired DATE NULL
+)
+PARTITION BY RANGE ( YEAR(hired) ) (
+    PARTITION p0 VALUES LESS THAN (2000),
+    PARTITION p1 VALUES LESS THAN (2010),
+    PARTITION p2 VALUES LESS THAN (2020),
+    PARTITION p3 VALUES LESS THAN MAXVALUE
+);
