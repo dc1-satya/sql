@@ -1,0 +1,56 @@
+https://www.tutorialspoint.com/mysql/mysql-data-types.htm
+https://www.mysqltutorial.org/mysql-data-types.aspx/
+
+1 Numeric Data Types
+  INT :  -2147483648 to 2147483647
+    TINYINT : -128 ti 127
+    SMALLINT  : -32768 to 32767
+    MEDIUMINT : -8388608 to 8388607
+    BIGINT : -9223372036854775808 to 9223372036854775807
+    
+    FLOAT(M,D) : 
+    DOUBLE(M,D)
+    DECIMAL(M,D)
+
+
+2 Date and Time Types
+  
+  DATE: Format : YYYY-MM-DD  , 1000-01-01 and 9999-12-31
+    For example, December 30th, 1973 would be stored as 1973-12-30.
+
+  DATETIME: YYYY-MM-DD HH:MM:SS
+  1000-01-01 00:00:00 and 9999-12-31 23:59:59
+
+  TIMESTAMP: YYYYMMDDHHMMSS
+  30th, 1973 would be stored as 19731230153000 ( YYYYMMDDHHMMSS ).
+
+  TIME : HH:MM:SS
+
+  YEAR(M) − Stores a year in a 2-digit or a 4-digit format
+
+3 String Types
+  CHAR(M) : A fixed-length string between 1 and 255 characters in length
+
+  VARCHAR(M)
+
+  BLOB or TEXT
+    TINYBLOB or TINYTEXT
+    MEDIUMBLOB or MEDIUMTEXT
+    LONGBLOB or LONGTEXT
+  
+  ENUM : ENUM ('A', 'B', 'C')
+
+
+4 Spatial data types
+  GEOMETRY	A spatial value of any type
+  POINT	A point (a pair of X-Y coordinates)
+  LINESTRING	A curve (one or more POINT values)
+  POLYGON	A polygon
+  GEOMETRYCOLLECTION	A collection of GEOMETRYvalues
+  MULTILINESTRING	A collection of LINESTRINGvalues
+  MULTIPOINT	A collection of POINTvalues
+  MULTIPOLYGON	A collection of POLYGONvalues
+
+
+5 JSON
+  MySQL supported a native JSON data type since version 5.7.8 that allows you to store and manage JSON documents more efficiently.
